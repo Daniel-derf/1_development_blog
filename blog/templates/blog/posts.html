@@ -3,12 +3,16 @@
 
 {% block container %}
 
-    <div> POSTS </div>
+<div class="container">
+    <h1 class="posts-title"> POSTS </h1>
     {% for post in posts %}
-    <h1>{{ post.title }}</h1>
-    Created at: <h3>{{ post.created_at }}</h3>
-    Updated at: <h3>{{ post.updated_at }}</h3>
+    <div class="post"> 
+        <h1>{{ post.title }}</h1>
+        Created at: <h3>{{ post.created_at }}</h3>
+        Updated at: <h3>{{ post.updated_at }}</h3>
+    </div>
 
     {% endfor %}
+</div>
 
 {% endblock container %} 

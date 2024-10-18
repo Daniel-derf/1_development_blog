@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do header */
+    justify-content: space-between; /* Distribui o espaço entre o título e o nav */
+    padding: 10px 20px; /* Adiciona algum espaço ao redor do header */
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita dentro do nav */
+}
+
+.header-nav a {
+    margin-left: 20px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Define a cor do texto dos links */
+}
+
+.header-nav a:hover {
+    color: rgb(144, 138, 138);
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+}
