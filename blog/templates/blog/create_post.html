@@ -1,0 +1,12 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block container %}
+    <form method="POST">
+        {% csrf_token %}
+        <h1>Write a Post: </h1>
+        {{ form }}
+
+        <button>Submit</button>
+    </form>
+{% endblock %}
