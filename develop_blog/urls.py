@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('posts/', v.get_posts),
     path('post/detail/<int:id>/', v.get_post),
-    path('post/create/', v.create_post)
+    path('post/create/', v.create_post),
+    path('post/delete/<int:id>', v.delete_post)
 ]
