@@ -1,0 +1,9 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block container %}
+  <h1>{{ post.title }}</h1>
+  <article>{{ post.content }}</article>
+  Created at: <h3>{{ post.created_at }}</h3>
+  Updated at: <h3>{{ post.updated_at }}</h3>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "global/base.html" %} 
+{% load static %}
+
+{% block container %}
+
+    <div> POSTS </div>
+    {% for post in posts %}
+    <h1>{{ post.title }}</h1>
+    Created at: <h3>{{ post.created_at }}</h3>
+    Updated at: <h3>{{ post.updated_at }}</h3>
+
+    {% endfor %}
+
+{% endblock container %} 
